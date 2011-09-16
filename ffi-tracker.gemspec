@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency(%q<gir_ffi>, ["~> 0.0.10"])
   s.add_development_dependency('minitest', [">= 2.0.2"])
+  s.add_development_dependency('rake', ["~> 0.9.2"])
 
   s.require_paths = ["lib"]
 end
