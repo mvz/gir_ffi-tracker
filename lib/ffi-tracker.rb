@@ -5,7 +5,7 @@ GirFFI.setup :Tracker
 module Tracker
   SparqlCursor.class_eval do
     def get_string_with_hidden_length column
-      result, length = *get_string_without_hidden_length(column)
+      result, _ = *get_string_without_hidden_length(column)
       result
     end
 
