@@ -1,4 +1,4 @@
-= ffi-tracker
+= gir_ffi-tracker
 
 by Matijs van Zuijlen
 
@@ -17,6 +17,6 @@ Ruby bindings for Tracker using GirFFI.
 
 Copyright (c) 2011 Matijs van Zuijlen
 
-ffi-tracker is free software, distributed under the terms of the GNU Lesser
+gir_ffi-tracker is free software, distributed under the terms of the GNU Lesser
 General Public License, version 2.1 or later. See the file COPYING.LIB for
 more information.
