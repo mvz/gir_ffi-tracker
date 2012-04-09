@@ -4,6 +4,8 @@ by Matijs van Zuijlen
 
 http://www.github.com/mvz/gir_ffi-tracker
 
+{<img src="https://secure.travis-ci.org/mvz/gir_ffi-tracker.png" />}[http://travis-ci.org/mvz/gir_ffi-tracker]
+
 == Description
 
 Ruby bindings for Tracker using GirFFI.
