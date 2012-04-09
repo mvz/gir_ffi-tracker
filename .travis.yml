@@ -7,4 +7,4 @@ rvm:
   - jruby-19mode
 before_install:
   - sudo apt-get update
-  - sudo apt-get install gir1.2-tracker-0.10
+  - sudo apt-get install gir1.2-tracker-0.10 libtracker-sparql-0.10-dev
