@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
 
   s.authors = ["Matijs van Zuijlen"]
   s.email = ["matijs@matijs.net"]
-  s.homepage = "http://www.github.com/mvz/ffi-tracker"
+  s.homepage = "http://www.github.com/mvz/gir_ffi-tracker"
 
   s.rdoc_options = ["--main", "README.rdoc"]
 

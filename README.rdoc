@@ -2,7 +2,7 @@
 
 by Matijs van Zuijlen
 
-http://www.github.com/mvz/ffi-tracker
+http://www.github.com/mvz/gir_ffi-tracker
 
 == Description
 
