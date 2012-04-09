@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "gir_ffi-tracker"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.summary = "GirFFI-based binding to Tracker"
 
