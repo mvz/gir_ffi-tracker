@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = "gir_ffi-tracker"
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.summary = "GirFFI-based binding to Tracker"
 
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ["README.rdoc"]
   s.test_files = `git ls-files -z -- test`.split("\0")
 
-  s.add_runtime_dependency(%q<gir_ffi>, ["~> 0.3.0"])
+  s.add_runtime_dependency(%q<gir_ffi>, ["~> 0.4.0"])
   s.add_development_dependency('minitest', [">= 2.0.2"])
   s.add_development_dependency('rake', ["~> 0.9.2"])
 
