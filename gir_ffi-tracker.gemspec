@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ["README.rdoc"]
   s.test_files = `git ls-files -z -- test`.split("\0")
 
-  s.add_runtime_dependency(%q<gir_ffi>, ["~> 0.4.0"])
-  s.add_development_dependency('minitest', [">= 2.0.2"])
-  s.add_development_dependency('rake', ["~> 0.9.2"])
+  s.add_runtime_dependency('gir_ffi', ["~> 0.5.0"])
+  s.add_development_dependency('minitest', ["~> 3.2.0"])
+  s.add_development_dependency('rake', ["~> 10.0.3"])
 
   s.require_paths = ["lib"]
 end
