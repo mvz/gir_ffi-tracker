@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency('gir_ffi', ["~> 0.5.0"])
 
-  s.add_development_dependency('minitest', ["~> 3.2.0"])
+  s.add_development_dependency('minitest', ["~> 4.5"])
   s.add_development_dependency('rake', ["~> 10.0.3"])
 
   s.require_paths = ["lib"]
