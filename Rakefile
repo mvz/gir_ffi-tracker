@@ -1,4 +1,6 @@
 require 'rake/clean'
+require 'bundler/gem_tasks'
+
 import 'tasks/test.rake'
 import 'tasks/yardoc.rake'
 
