@@ -15,7 +15,7 @@ GirFFI-based bindings for Tracker
 
 ## License
 
-Copyright &copy; 2011&ndash;2013 Matijs van Zuijlen
+Copyright &copy; 2011&ndash;2015 Matijs van Zuijlen
 
 GirFFI-Tracker is free software, distributed under the terms of the GNU
 Lesser General Public License, version 2.1 or later. See the file
