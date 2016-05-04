@@ -17,6 +17,7 @@ matrix:
     - rvm: ruby-head
     - rvm: ruby-head-clang
 before_install:
+  - "export JRUBY_OPTS='--client -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -Xcext.enabled=false -J-Xss2m -Xcompile.invokedynamic=false'"
   - sudo apt-get update
   - sudo apt-get install -y libgirepository1.0-dev gobject-introspection
   - sudo apt-get install -y gir1.2-tracker-0.16 libtracker-sparql-0.16-dev
