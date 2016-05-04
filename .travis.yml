@@ -1,3 +1,5 @@
+sudo: required
+dist: trusty
 language: ruby
 rvm:
   - 2.0.0
@@ -8,15 +10,20 @@ rvm:
   - ruby-head-clang
   - jruby-9.0
   - jruby-head
-  - rbx-3.7
+  - rbx-3.26
 matrix:
   allow_failures:
     - rvm: jruby-head
     - rvm: ruby-head
     - rvm: ruby-head-clang
+    - rvm: rbx-3.26
 before_install:
+  # Needed until https://github.com/travis-ci/travis-ci/issues/5477 is fixed
+  - "export JRUBY_OPTS='--client -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -Xcext.enabled=false -J-Xss2m -Xcompile.invokedynamic=false'"
   - sudo apt-get update
-  - sudo apt-get --no-install-recommends install tracker gir1.2-tracker-0.14 libtracker-sparql-0.14-dev libgirepository1.0-dev gobject-introspection
+  - sudo apt-get install -y libgirepository1.0-dev gobject-introspection
+  - sudo apt-get install -y gir1.2-tracker-0.16 libtracker-sparql-0.16-dev
+  - sudo apt-get --no-install-recommends install -y tracker
 # Tests must be run with an X-server to allow D-Bus autolaunch, which
 # Tracker needs.
 before_script:
