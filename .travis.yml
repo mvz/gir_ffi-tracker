@@ -18,7 +18,9 @@ matrix:
     - rvm: ruby-head-clang
 before_install:
   - sudo apt-get update
-  - sudo apt-get --no-install-recommends install tracker gir1.2-tracker-0.14 libtracker-sparql-0.14-dev libgirepository1.0-dev gobject-introspection
+  - sudo apt-get install -y libgirepository1.0-dev gobject-introspection
+  - sudo apt-get install -y gir1.2-tracker-0.16 libtracker-sparql-0.16-dev
+  - sudo apt-get --no-install-recommends install -y tracker
 # Tests must be run with an X-server to allow D-Bus autolaunch, which
 # Tracker needs.
 before_script:
