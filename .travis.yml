@@ -17,6 +17,7 @@ matrix:
     - rvm: ruby-head
     - rvm: ruby-head-clang
 before_install:
+  # Needed until https://github.com/travis-ci/travis-ci/issues/5477 is fixed
   - "export JRUBY_OPTS='--client -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -Xcext.enabled=false -J-Xss2m -Xcompile.invokedynamic=false'"
   - sudo apt-get update
   - sudo apt-get install -y libgirepository1.0-dev gobject-introspection
