@@ -1,3 +1,7 @@
+## 0.10.0 / 2016-05-05
+
+* Update dependency on GirFFI
+
 ## 0.9.0 / 2016-01-21
 
 * Update dependency on GirFFI
