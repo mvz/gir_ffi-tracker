@@ -3,7 +3,7 @@ require File.expand_path('../test_helper.rb', File.dirname(__FILE__))
 describe Tracker::SparqlCursor do
   describe "#get_string" do
     before do
-      conn = Tracker::SparqlConnection.get_direct nil
+      conn = Tracker::SparqlConnection.get
       @cursor = conn.query "SELECT 'Foo' { }", nil
 
       @cursor.next nil
