@@ -1,3 +1,9 @@
+## 0.12.0 / 2018-03-25
+
+* Depend on GirFFI 0.12.0
+* Support Tracker 2.0
+* Require CRuby 2.3 or above
+
 ## 0.10.0 / 2016-05-05
 
 * Update dependency on GirFFI
