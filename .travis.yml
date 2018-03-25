@@ -1,28 +1,28 @@
 sudo: required
 dist: trusty
 language: ruby
-rvm:
-  - 2.1.9
-  - 2.2.6
-  - 2.3.3
-  - ruby-head
-  - ruby-head-clang
-  - jruby-9.0
-  - jruby-head
-  - rbx-3.26
-  - rbx-3.69
-matrix:
-  allow_failures:
-    - rvm: jruby-head
-    - rvm: ruby-head
-    - rvm: ruby-head-clang
-    - rvm: rbx-3.26
-    - rvm: rbx-3.69
+
 before_install:
   - sudo apt-get update
   - sudo apt-get install -y libgirepository1.0-dev gobject-introspection
   - sudo apt-get install -y gir1.2-tracker-0.16 libtracker-sparql-0.16-dev
   - sudo apt-get --no-install-recommends install -y tracker
+
+rvm:
+  - 2.3
+  - 2.4
+  - 2.5
+  - jruby-9.1
+  - ruby-head
+  - ruby-head-clang
+  - jruby-head
+
+matrix:
+  allow_failures:
+    - rvm: jruby-head
+    - rvm: ruby-head
+    - rvm: ruby-head-clang
+
 # Tests must be run with an X-server to allow D-Bus autolaunch, which
 # Tracker needs.
 before_script:
