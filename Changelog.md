@@ -1,3 +1,7 @@
+## 0.12.1 / 2018-07-09
+
+* Restore support for CRuby 2.1 and 2.2
+
 ## 0.12.0 / 2018-03-25
 
 * Depend on GirFFI 0.12.0
