@@ -2,9 +2,10 @@ require 'gir_ffi'
 
 GirFFI.setup :Tracker
 
-module Tracker
-  load_class :SparqlCursor
+Tracker.load_class :SparqlCursor
 
+module Tracker
+  # Overrides for Tracker::SparqlCursor
   class SparqlCursor
     setup_instance_method 'get_string'
 
