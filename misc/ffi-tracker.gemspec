@@ -2,7 +2,8 @@ Gem::Specification.new do |s|
   s.name = 'ffi-tracker'
   s.version = '0.1.0'
 
-  s.summary = 'FFI-based binding to Tracker, using the GObject Introspection Repository (deprecated)'
+  s.summary =
+    'FFI-based binding to Tracker, using the GObject Introspection Repository (deprecated)'
 
   s.post_install_message = <<-WARNING
     #########################################################################
