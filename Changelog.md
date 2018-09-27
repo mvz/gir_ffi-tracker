@@ -1,6 +1,6 @@
-## 0.13.0 / 2018-09-08
+## 0.14.0 / 2018-09-27
 
-* Depend on GirFFI 0.13.0
+* Depend on GirFFI 0.14.0
 * Drop support for Ruby 2.1
 
 ## 0.12.1 / 2018-07-09
