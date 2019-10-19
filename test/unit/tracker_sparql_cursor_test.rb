@@ -12,12 +12,12 @@ describe Tracker::SparqlCursor do
     end
 
     it 'returns just the string value' do
-      @cursor.get_string(0).must_equal 'Foo'
+      _(@cursor.get_string(0)).must_equal 'Foo'
     end
 
     it 'can safely be called twice' do
       @cursor.get_string(0)
-      @cursor.get_string(0).must_equal 'Foo'
+      _(@cursor.get_string(0)).must_equal 'Foo'
     end
   end
 end
