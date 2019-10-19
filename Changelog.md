@@ -1,6 +1,9 @@
-## Unreleased
+# Change log
 
-* Drop support for Ruby 2.2
+## 0.15.0 / 2019-10-19
+
+* Depend on GirFFI 0.15.0
+* Target Ruby 2.4+
 
 ## 0.14.0 / 2018-09-27
 
