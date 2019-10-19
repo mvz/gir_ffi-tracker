@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |s|
-  s.name = 'ffi-tracker'
-  s.version = '0.1.0'
+  s.name = "ffi-tracker"
+  s.version = "0.1.0"
 
   s.summary =
-    'FFI-based binding to Tracker, using the GObject Introspection Repository (deprecated)'
+    "FFI-based binding to Tracker, using the GObject Introspection Repository (deprecated)"
 
   s.post_install_message = <<-WARNING
     #########################################################################
@@ -15,9 +15,9 @@ Gem::Specification.new do |s|
     #########################################################################
   WARNING
 
-  s.authors = ['Matijs van Zuijlen']
-  s.email = ['matijs@matijs.net']
-  s.homepage = 'http://www.github.com/mvz/ffi-tracker'
+  s.authors = ["Matijs van Zuijlen"]
+  s.email = ["matijs@matijs.net"]
+  s.homepage = "http://www.github.com/mvz/ffi-tracker"
 
-  s.add_runtime_dependency('gir_ffi-tracker', ['~> 0.1.0'])
+  s.add_runtime_dependency("gir_ffi-tracker", ["~> 0.1.0"])
 end
