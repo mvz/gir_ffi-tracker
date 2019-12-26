@@ -1,12 +1,23 @@
-sudo: required
-dist: trusty
 language: ruby
+
+dist: xenial
+
+services:
+  - xvfb
 
 before_install:
   - sudo apt-get update
-  - sudo apt-get install -y libgirepository1.0-dev gobject-introspection
-  - sudo apt-get install -y gir1.2-tracker-0.16 libtracker-sparql-0.16-dev
+  # Provides libgirepository-1.0.so.1
+  - sudo apt-get install libgirepository-1.0-1
+  # Provides Tracker-1.0.typelib
+  - sudo apt-get install gir1.2-tracker-1.0
+  # Provides libtracker-sparql-1.0.so
+  - sudo apt-get install libtracker-sparql-1.0-dev
+  # Sets up a mimimal tracker installation
   - sudo apt-get --no-install-recommends install -y tracker
+
+cache:
+  bundler: true
 
 rvm:
   - 2.4
@@ -19,16 +30,9 @@ rvm:
 
 matrix:
   allow_failures:
-    - rvm: jruby-head
     - rvm: ruby-head
     - rvm: ruby-head-clang
-
-# Tests must be run with an X-server to allow D-Bus autolaunch, which
-# Tracker needs.
-before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-script: "DISPLAY=:99.0 bundle exec rake test"
+    - rvm: jruby-head
 
 branches:
   only:
