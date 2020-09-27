@@ -1,7 +1,12 @@
 # frozen_string_literal: true
 
-require "minitest/autorun"
+require "simplecov"
+SimpleCov.start do
+  add_group "Main", "lib"
+  add_group "Tests", "test"
+  enable_coverage :branch
+end
 
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
+require "minitest/autorun"
 
 require "gir_ffi-tracker"
