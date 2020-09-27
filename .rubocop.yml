@@ -1,11 +1,13 @@
 require:
   - rubocop-performance
   - rubocop-minitest
+  - rubocop-packaging
 
 AllCops:
   Exclude:
     - 'examples/*'
     - 'tmp/**/*'
+    - 'vendor/bundle/**/*'
   NewCops: enable
   TargetRubyVersion: 2.5
 

@@ -3,4 +3,4 @@ doc/
 html/
 .yardoc/
 *.gem
-.bundle/
+coverage/
