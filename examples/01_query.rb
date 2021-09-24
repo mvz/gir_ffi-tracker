@@ -1,6 +1,6 @@
 require "gir_ffi-tracker"
 
-conn = Tracker::SparqlConnection.get
+conn = Tracker::SparqlConnection.bus_new("org.freedesktop.Tracker3.Miner.Files")
 cursor = conn.query "SELECT nie:url(?u) WHERE { ?u a nfo:FileDataObject }"
 count = 0
 while cursor.next
