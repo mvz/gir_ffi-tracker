@@ -17,37 +17,37 @@ jobs:
 
     strategy:
       matrix:
-        ruby: [2.5, 2.6, 2.7, "3.0", head]
+        ruby: [2.6, 2.7, "3.0", head]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Install non-ruby dependencies
-      run: |
-        # Provides libgirepository-1.0.so.1
-        sudo apt-get install libgirepository-1.0-1
-        # Provides Tracker-2.0.typelib
-        sudo apt-get install gir1.2-tracker-2.0
-        # Sets up a mimimal tracker installation
-        sudo apt-get --no-install-recommends install -y tracker
+      - uses: actions/checkout@v2
+      - name: Install non-ruby dependencies
+        run: |
+          # Provides libgirepository-1.0.so.1
+          sudo apt-get install libgirepository-1.0-1
+          # Provides Tracker-2.0.typelib
+          sudo apt-get install gir1.2-tracker-2.0
+          # Sets up a mimimal tracker installation
+          sudo apt-get --no-install-recommends install -y tracker
 
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby }}
-        bundler-cache: true
-    - name: Run tests in a DBus session
-      run: dbus-run-session bundle exec rake
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+      - name: Run tests in a DBus session
+        run: dbus-run-session bundle exec rake
 
   rubocop:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.7
-        bundler-cache: true
-    - name: Run RuboCop
-      run: bundle exec rubocop -P
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+      - name: Run RuboCop
+        run: bundle exec rubocop -P
