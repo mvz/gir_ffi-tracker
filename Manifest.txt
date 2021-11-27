@@ -1,5 +1,6 @@
 lib/ffi-tracker.rb
 lib/gir_ffi-tracker.rb
+lib/gir_ffi-tracker/version.rb
 Changelog.md
 README.md
 COPYING.LIB
