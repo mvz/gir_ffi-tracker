@@ -1,5 +1,10 @@
 # Change log
 
+## 0.15.1 / 2021-01-21
+
+* Target Ruby 2.6 through 3.1
+* Add support for Tracker 3.0
+
 ## 0.15.0 / 2019-10-19
 
 * Depend on GirFFI 0.15.0
