@@ -1,6 +1,11 @@
 # Change log
 
-## 0.15.1 / 2021-01-21
+## 0.16.0 / 2022-05-21
+
+* Drop support for Ruby 2.6
+* Update `gir_ffi` dependency to version 0.16.0
+
+## 0.15.1 / 2022-01-21
 
 * Target Ruby 2.6 through 3.1
 * Add support for Tracker 3.0
