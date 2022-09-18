@@ -12,7 +12,9 @@ GirFFI-based bindings for Tracker
 
 ## Install
 
-    gem install gir_ffi-tracker
+```bash
+gem install gir_ffi-tracker
+```
 
 ## Examples
 
@@ -33,7 +35,6 @@ puts "Total: #{count}"
 
 With Tracker 3.0:
 
-
 ```ruby
 require "gir_ffi-tracker"
 
@@ -47,9 +48,30 @@ end
 puts "Total: #{count}"
 ```
 
+## Requirements
+
+This gem depends on the [GirFFI](https://rubygems.org/gems/gir_ffi) gem and its
+requirements. In addition, it needs introspection data for the
+Tracker 2.0 or 3.0 client library.
+
+On Debian and Ubuntu, for Tracker 2.0, try:
+
+```bash
+apt-get install gir1.2-tracker-2.0
+```
+
+And for Tracker 3.0:
+
+```
+apt-get install gir1.2-tracker-3.0
+```
+
+This gem has not been tested on Mac OS X or Microsoft Windows. YMMV. Pull
+requests to support these platforms are welcome.
+
 ## License
 
-Copyright &copy; 2011&ndash;2016, 2018&ndash;2021 [Matijs van Zuijlen](http://www.matijs.net)
+Copyright &copy; 2011&ndash;2016, 2018&ndash;2022 [Matijs van Zuijlen](http://www.matijs.net)
 
 GirFFI-Tracker is free software, distributed under the terms of the GNU
 Lesser General Public License, version 2.1 or later. See the file
