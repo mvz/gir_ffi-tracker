@@ -29,10 +29,10 @@ jobs:
           sudo apt-get update
           # Provides libgirepository-1.0.so.1
           sudo apt-get install libgirepository-1.0-1
-          # Provides Tracker-2.0.typelib
-          sudo apt-get install gir1.2-tracker-2.0
+          # Provides Tracker-3.0.typelib
+          sudo apt-get install gir1.2-tracker-3.0
           # Sets up a mimimal tracker installation
-          sudo apt-get --no-install-recommends install -y tracker
+          sudo apt-get --no-install-recommends install -y tracker tracker-miner-fs
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
