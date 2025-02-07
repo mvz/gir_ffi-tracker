@@ -1,5 +1,15 @@
 # Change log
 
+## 0.18.0 / 2025-02-07
+
+* Support Ruby 3.1 through 3.4, dropping support for Ruby 3.0 ([#99] by [mvz])
+* Update `gir_ffi` dependency to version 0.18.0 ([#101] by [mvz])
+
+[mvz]: https://github.com/mvz
+
+[#99]: https://github.com/mvz/gir_ffi-tracker/pull/99
+[#101]: https://github.com/mvz/gir_ffi-tracker/pull/101
+
 ## 0.17.0 / 2024-01-05
 
 * Support Ruby 3.0 through 3.3, dropping support for Ruby 2.7
