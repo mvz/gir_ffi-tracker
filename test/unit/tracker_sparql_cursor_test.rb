@@ -21,6 +21,7 @@ describe Tracker::SparqlCursor do
 
     it "can safely be called twice" do
       @cursor.get_string(0)
+
       _(@cursor.get_string(0)).must_equal "Foo"
     end
   end
