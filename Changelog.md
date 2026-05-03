@@ -1,5 +1,17 @@
 # Change log
 
+## 0.19.0 / 2026-05-03
+
+* Support Ruby 3.2 and above ([#106] by [mvz])
+* Test with Ruby 4.0 in CI ([#112] by [mvz])
+* Update `gir_ffi` dependency to version 0.19.0 ([#114] by [mvz])
+* Remove old ffi-tracker compatibility file ([#115] by [mvz])
+
+[#106]: https://github.com/mvz/gir_ffi-tracker/pull/106
+[#112]: https://github.com/mvz/gir_ffi-tracker/pull/112
+[#114]: https://github.com/mvz/gir_ffi-tracker/pull/114
+[#115]: https://github.com/mvz/gir_ffi-tracker/pull/115
+
 ## 0.18.0 / 2025-02-07
 
 * Support Ruby 3.1 through 3.4, dropping support for Ruby 3.0 ([#99] by [mvz])

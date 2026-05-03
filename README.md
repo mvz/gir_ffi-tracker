@@ -62,7 +62,7 @@ apt-get install gir1.2-tracker-2.0
 
 And for Tracker 3.0:
 
-```
+```bash
 apt-get install gir1.2-tracker-3.0
 ```
 
@@ -71,7 +71,7 @@ requests to support these platforms are welcome.
 
 ## License
 
-Copyright &copy; 2011&ndash;2016, 2018&ndash;2023 [Matijs van Zuijlen](http://www.matijs.net)
+Copyright &copy; 2011&ndash;2016, 2018&ndash;2026 [Matijs van Zuijlen](http://www.matijs.net)
 
 GirFFI-Tracker is free software, distributed under the terms of the GNU
 Lesser General Public License, version 2.1 or later. See the file
