@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.extra_rdoc_files = ["README.md", "Changelog.md"]
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "gir_ffi", "~> 0.18.0"
+  spec.add_dependency "gir_ffi", "~> 0.19.0"
 
   spec.add_development_dependency "minitest", "~> 6.0"
   spec.add_development_dependency "rake", "~> 13.0"
